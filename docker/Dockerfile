@@ -12,7 +12,7 @@ RUN apt-get update \
     && wget https://github.com/broadgsa/gatk-protected/archive/3.6.tar.gz \
     && tar xf 3.6.tar.gz \
     && cd gatk-protected-3.6 \
-    && sh ./ant-bridge.sh \
+    && bash ./ant-bridge.sh \
     && mv target/GenomeAnalysisTK.jar /usr/local/bin/ \
     && cd ../ \
     && rm -rf gatk-protected-3.6 \
