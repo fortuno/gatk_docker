@@ -5,6 +5,7 @@ MAINTAINER Jeremiah H. Savage <jeremiahsavage@gmail.com>
 RUN dnf install -y \
        java-1.8.0-openjdk-headless \
        maven \
+       tar \
        wget \
     && wget https://github.com/broadgsa/gatk-protected/archive/3.6.tar.gz \
     && tar xf 3.6.tar.gz \
