@@ -13,4 +13,7 @@ RUN apt-get update \
     && tar xf 3.6.tar.gz \
     && cd gatk-protected-3.6 \
     && sh ./ant-bridge.sh \
-    && mv target/GenomeAnalysisTK.jar /usr/local/bin/
+    && mv target/GenomeAnalysisTK.jar /usr/local/bin/ \
+    && cd ../ \
+    && rm -rf gatk-protected-3.6 \
+    && cd
